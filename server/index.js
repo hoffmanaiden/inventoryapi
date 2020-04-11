@@ -6,6 +6,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const errorHandler = require("./handlers/error");
 const authRoutes = require("./routes/auth");
+const itemRoutes = require("./routes/items");
 
 const PORT = 8081;
 
@@ -14,6 +15,7 @@ app.use(bodyParser.json());
 
 // List of Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/items", itemRoutes);
 
 
 // If no routes can be reached...

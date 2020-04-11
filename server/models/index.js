@@ -9,3 +9,4 @@ mongoose.connect("mongodb://localhost/inventory", {
 });
 
 module.exports.User = require("./user");
+module.exports.Item = require("./item");
