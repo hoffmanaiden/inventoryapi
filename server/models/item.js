@@ -7,7 +7,7 @@ const itemSchema = new mongoose.Schema({
   qty:{type: Number, required: true, default:0},
   qtyUnit:{type: String},
   img:{type: String}
-});
+}, {timestamps: true});
 
 const Item = mongoose.model("Item", itemSchema);
 module.exports = Item;
