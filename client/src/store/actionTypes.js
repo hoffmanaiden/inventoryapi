@@ -1,0 +1,5 @@
+export const ADD_ERROR = "ADD_ERROR";
+export const REMOVE_ERROR = "REMOVE_ERROR";
+export const SET_CURRENT_USER = "SET_CURRENT_USER";
+export const LOAD_EQUIPMENT = "LOAD_EQUIPMENT";
+export const REMOVE_EQUIPMENT = "REMOVE_EQUIPMENT";
