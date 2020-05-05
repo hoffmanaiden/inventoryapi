@@ -9,7 +9,7 @@ const authRoutes = require("./routes/auth");
 const itemRoutes = require("./routes/items");
 const {loginRequired} = require("./middleware/auth");
 
-const PORT = 8081;
+const PORT = process.event.PORT || 8081;
 
 app.use(cors());
 app.use(bodyParser.json());
